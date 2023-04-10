@@ -1,0 +1,39 @@
+simdi = datetime.now() # Kodun çalıştırıldığı andaki zamanı verir
+print(simdi)
+
+bugun = datetime.today() # Kodun çalıştırıldığı andaki zamanı verir
+print(bugun)
+
+yil = datetime.now().year # Kodun çalıştırıldığı andaki yılı verir
+print(yil)
+
+ay = datetime.now().month # Kodun çalıştırıldığı andaki ayı zamanı verir
+print(ay)
+
+
+
+# Kodun çalıştırıldığı andaki günün tam sayı cinsinden karşılığını verir.
+# Pazartesi => 0
+# Salı      => 1
+# Çarşamba  => 2
+# Perşembe  => 3
+# Cuma      => 4
+# Cumartesi => 5
+# Pazar     => 6
+hafta = datetime.now().weekday() 
+print(hafta)
+
+gun = datetime.now().day # Kodun çalıştırıldığı andaki günü verir.
+print(gun)
+
+saat = datetime.now().hour # Kodun çalıştırıldığı andaki saati verir.
+print(saat)
+
+dakika = datetime.now().minute # Kodun çalıştırıldığı andaki dakikayı verir.
+print(dakika)
+
+saniye = datetime.now().second # Kodun çalıştırıldığı andaki saniyeyi verir.
+print(saniye)
+
+tarih = datetime.ctime(simdi) # Kodun çalıştırıldığı andaki zamanı daha okunaklı yazar.
+print(tarih)
